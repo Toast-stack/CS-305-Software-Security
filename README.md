@@ -1,9 +1,22 @@
 # CS-305-Software-Security
 
-    Briefly summarize your client, Artemis Financial, and their software requirements. Who was the client? What issue did they want you to address?
-    What did you do very well when you found your client’s software security vulnerabilities? Why is it important to code securely? What value does software security add to a company’s overall wellbeing?
-    What part of the vulnerability assessment was challenging or helpful to you?
-    How did you increase layers of security? In the future, what would you use to assess vulnerabilities and decide which mitigation techniques to use?
-    How did you make certain the code and software application were functional and secure? After refactoring the code, how did you check to see whether you introduced new vulnerabilities?
-    What resources, tools, or coding practices did you use that might be helpful in future assignments or tasks?
-    Employers sometimes ask for examples of work that you have successfully completed to show your skills, knowledge, and experience. What might you show future employers from this assignment?
+    **Briefly summarize your client, Artemis Financial, and their software requirements. Who was the client? What issue did they want you to address?**
+Our Client during this class was Artemis Financial and what they sought to do is protect their public-facing website using the most popular and most effective forms of encryption as well as protecting any user data that is communicated between the users and the servers running the website.
+    
+   ** What did you do very well when you found your client’s software security vulnerabilities? Why is it important to code securely? What value does software security add to a company’s overall well-being?**
+One thing that I thought I did well was understanding the Dependency check report that we ran multiple times during this class and understanding which of the reports could've been false positives and which were actual threats that would need to be taken care of in the future. I think it is always important to code securely as any port left open or thing that gets brushed aside during development could present a huge hole in our program and expose a lot of either personal information or how our encryption systems may work. With code security leaving anything open or accessible to any potential bad actors is a huge problem especially if the code isn't getting regular updates which can affect the company directly, while this is a heavyweight if the program or code is written securely and correctly it can give anyone running the program or trusting the online system to have a piece of mind. 
+    
+    **What part of the vulnerability assessment was challenging or helpful to you?**
+I think the hardest time I had was trying to originally understand the dependency report and how some of the things it was showing could've been false positives and how others might have been legitimate problems with the dependencies we decided to use.
+    
+    **How did you increase layers of security? In the future, what would you use to assess vulnerabilities and decide which mitigation techniques to use?**
+During this class, we took a look at the more needed parts of online websites and the servers that run them, a lot of those being the dependencies as well as the encryption type we use in order to secure the transmission of potentially sensitive user data, I think if we have another service that will use a Maven dependency system I will use the Dependency checker more as it offers an in-depth analysis into each of the dependencies we have and what could present a problem with the current version of that dependency.
+    
+    **How did you make certain the code and software application were functional and secure? After refactoring the code, how did you check to see whether you introduced new vulnerabilities?**
+After implementing my new security measures, such as an SHA-256 encryption, the dependency checker, and any suppressions I made to false positives. I tested each of these first by using a checksum in order to make sure that the SHA-256 key was being made properly and without errors as well as showing that my test site was indeed reaching out to at least my local machine. The next thing I tested was the dependency checker report to see if all of the dependencies I had identified as false positives had been properly suppressed and wouldn't continue to cause errors.
+    
+    **What resources, tools, or coding practices did you use that might be helpful in future assignments or tasks?**
+I found both the introduction of the dependency checker and the way to make self-signed certificates to be both informative and potentially useful in the future, With the dependency checker it makes it easier to have another tool to help me check over my work with less investment of time that manually looking through everything ever release on that potential issue. Self-signed certificates I believe that these could be useful especially if I plan to work under certain areas of cyber security which could help isolate certain parts of a website or company's system to only let people with a proper certificate into a certain domain or other infrastructure of the company.
+    
+    **Employers sometimes ask for examples of work that you have successfully completed to show your skills, knowledge, and experience. What might you show future employers from this assignment?**
+    I would show them the overall learning and understanding I had found while taking this course both in the dependency checker that can be incorporated into Maven but also in the process of making Self-signed certificates which could potentially be something that could be useful in the future.
