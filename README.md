@@ -61,3 +61,6 @@ This project provided valuable hands-on experience with **software security best
 ## Conclusion
 
 Software security is a crucial aspect of software development, ensuring that sensitive data remains protected from potential threats. This project reinforced the importance of **secure coding**, **regular vulnerability assessments**, and **proactive mitigation strategies** in safeguarding critical systems.
+
+## License
+This project is licensed under the MIT License. You are free to use, modify, and distribute this software.
